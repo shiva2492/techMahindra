@@ -1,6 +1,6 @@
 (function() {
 	'use strict';
-	angular.module('ngSeedApp.filters')
+	angular.module('techMahindraApp.filters')
 		.filter('makeUppercase', function() {
 			return function(item) {
 				return item.toUpperCase();

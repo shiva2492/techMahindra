@@ -1,10 +1,54 @@
-<h2>
-	{{title  | makeUppercase}} <!-- Example of a filter -->
-</h2>
+<style type="text/css">
+	
+
+</style>
+
+<div class="page-container" style="padding-left: 20px">
+	<div class="row">
+	<h3>
+		Strategic Dashboard View
+	</h3>	
+	</div>
 
 
+	<div class="row">
 
-<p>
-	This is a skeleton for my typical AngularJS web app. You can use it to quickly bootstrap your
-	angular projects.
-</p>
+		<table class="table table-bordered" style="table-layout: fixed">
+    		<thead>
+		      <tr class="red">
+		        <th class="table-header" rowspan="2">SI No.</th>
+		        <th class="table-header" rowspan="2">Account Name</th>
+		        <th class="table-header" rowspan="2">SBU</th>
+		        <th class="table-header" rowspan="2">IBG</th>
+		        <th class="table-header" rowspan="2">FTE</th>
+		        <th class="table-header" rowspan="2">Total Projects</th>
+		        <th style="text-align: center; width:50%" colspan="5">RAG</th>
+		        <th class="table-header" rowspan="2">Overall RAG</th>
+		      </tr>
+		      <tr>
+		      	
+
+		      	<th class="grey cell-wrap">Governance/Commercial</th>
+		      	<th class="grey cell-wrap">Engineering</th>
+		      	<th class="grey cell-wrap">Customer</th>
+		      	<th class="grey cell-wrap">Compliance</th>
+		      	<th class="grey cell-wrap">People</th>
+		      	
+		      </tr>
+    		</thead>
+    		<tbody>
+		      <tr ng-repeat="data in dashboard_data track by $index">
+		        <td class="info cell-wrap">{{data.sr_no}}</td>
+		        <td class="info cell-wrap">{{data.account_name}}</td>
+		        <td class="info cell-wrap">{{data.SBU}}</td>
+		        <td class="info cell-wrap">{{data.IBG}}</td>
+		        <td class="info cell-wrap">{{data.FTE}}</td>
+		        <td class="info cell-wrap">{{data.total_projects}}</td>
+		        <td class="rag-{{rag}} cell-wrap" ng-repeat="rag in data.rag track by $index"></td>
+		        <td class="rag-{{data.overall_rag}} cell-wrap" ng-click="drillDown()"></td>
+		      </tr>      
+
+    		</tbody>
+  		</table>
+	</div>
+</div>

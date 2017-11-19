@@ -1,6 +1,6 @@
 (function() {
     'use strict';
-    angular.module('ngSeedApp.services')
+    angular.module('techMahindraApp.services')
     .service(
         "ngService",
         function($http, $q) {

@@ -1,6 +1,6 @@
 (function() {
 	'use strict';
-	angular.module('ngSeedApp.directives')
+	angular.module('techMahindraApp.directives')
 		.directive('githubUrl', function() {
 			return {
 				scope: true, // use a child scope that inherits from parent

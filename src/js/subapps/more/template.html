@@ -1,7 +1,49 @@
-<h2>
-	{{title}} (other than AngularJS)
-</h2>
+<style type="text/css">
+	
 
-<ul>
-	<li>UI router</li>
-</ul>
+</style>
+
+
+
+<div class="page-container" style="padding-left: 20px">
+	<div class="row">
+		<h3>
+			Drill Down Overall RAG
+		</h3>	
+	</div>
+
+	<div class="row" ng-repeat="data in overallRag_data track by $index" ng-if="$index%2==0">
+		<div class="col-md-6" ng-repeat="i in [$index,$index+1]" ng-if="overallRag_data[i]">
+			<table class="table attribute-headers" style="table-layout: fixed;">
+				<thead>
+					<th width="50%">
+						{{overallRag_data[i].attribute_name}}
+					</th>
+					<th width="25%" style="text-align: right;">
+						RAG
+					</th>
+					<th width="25%" class="rag-{{overallRag_data[i].overall_rag}}">
+						
+					</th>
+				</thead>
+			</table>
+			<table class="table table-bordered" style="table-layout: fixed;" >
+				<thead>
+					<th>Metric Name</th>
+					<th>UoM</th>
+					<th>Performance</th>
+				</thead>
+				<tbody>
+					<tr ng-repeat="metricData in overallRag_data[i].metric">
+						<td>{{metricData.metric_name}}</td>
+						<td>{{metricData.UoM}}</td>
+						<td class="rag-1" ng-if="$index%2==0">{{metricData.performance}}</td>
+						<td class="rag-2" ng-if="$index%2!=0 && $index%3!=0">{{metricData.performance}}</td>
+						<td class="rag-3" ng-if="$index%3==0 && $index%2!=0">{{metricData.performance}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</div>

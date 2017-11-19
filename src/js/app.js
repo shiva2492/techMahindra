@@ -3,9 +3,9 @@
 
 	//Create a app level module which has dependencies on controllers and components
 	var ngPrototype =
-		angular.module('ngSeedApp', [
+		angular.module('techMahindraApp', [
 			'ui.router',
-			'ngSeedApp.controllers'
+			'techMahindraApp.controllers'
 		]);
 
 	ngPrototype.run(['$rootScope', '$state', '$stateParams',

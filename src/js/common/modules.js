@@ -1,8 +1,8 @@
 (function() {
 	'use strict';
-	angular.module('ngSeedApp.directives', []);
-	angular.module('ngSeedApp.services', []);
-	angular.module('ngSeedApp.filters', []);
-	angular.module('ngSeedApp.constants', []);
-	angular.module('ngSeedApp.controllers', ['ngSeedApp.filters', 'ngSeedApp.services', 'ngSeedApp.directives', 'ngSeedApp.constants']);
+	angular.module('techMahindraApp.directives', []);
+	angular.module('techMahindraApp.services', []);
+	angular.module('techMahindraApp.filters', []);
+	angular.module('techMahindraApp.constants', []);
+	angular.module('techMahindraApp.controllers', ['techMahindraApp.filters', 'techMahindraApp.services', 'techMahindraApp.directives', 'techMahindraApp.constants']);
 }());

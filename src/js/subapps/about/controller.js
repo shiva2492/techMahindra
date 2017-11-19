@@ -1,6 +1,6 @@
 (function() {
 	'use strict';
-	angular.module('ngSeedApp.controllers')
+	angular.module('techMahindraApp.controllers')
 		.controller('aboutController', [
 			'$scope', 'ngService', 'ngConstants',
 			function($scope, ngService, ngConstants) {

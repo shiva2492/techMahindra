@@ -1,0 +1,179 @@
+[
+	{ 
+		"attribute_name":"Governance / Commercial",
+		"overall_rag":"1",
+		"metric":
+			[
+				{
+					"metric_name":"Onsite Subcon Index(%)",
+					"UoM":"%",
+					"performance":"31"
+
+				},
+				{
+					"metric_name":"Offshoring Index (%)",
+					"UoM":"%",
+					"performance":"20"
+
+				},
+				{
+					"metric_name":"Leakage Index (%)",
+					"UoM":"%",
+					"performance":"31"
+
+				},
+				{
+					"metric_name":"Tail Index (%)",
+					"UoM":"%",
+					"performance":"10"
+
+				},
+				{
+					"metric_name":"Revenue",
+					"UoM":"USD Mn.",
+					"performance":"40"
+
+				},
+				{
+					"metric_name":"EBITDA",
+					"UoM":"%",
+					"performance":"25%"
+
+				}
+
+			]
+	},
+	{ 
+		"attribute_name":"Engineering",
+		"overall_rag":"2",
+		"metric":
+			[
+				{
+					"metric_name":"Effort Variance",
+					"UoM":"Score",
+					"performance":"4.05"
+
+				},
+				{
+					"metric_name":"On Time Delivery",
+					"UoM":"%",
+					"performance":"31"
+
+				},
+				{
+					"metric_name":"Capacity utilization",
+					"UoM":"%",
+					"performance":"31"
+
+				},
+				{
+					"metric_name":"SLA & KPI compliance",
+					"UoM":"%",
+					"performance":"31"
+
+				},
+				{
+					"metric_name":"Customer Experience (Defect Free Delivery )",
+					"UoM":"%",
+					"performance":"31"
+
+				},
+				{
+					"metric_name":"Total Quality Index (TQA)",
+					"UoM":"Score",
+					"performance":"31"
+
+				}
+
+			]
+	},
+	{ 
+		"attribute_name":"Customer",
+		"overall_rag":"3",
+		"metric":
+			[
+				{
+					"metric_name":"PSAT",
+					"UoM":"No.",
+					"performance":"4.05"
+
+				},
+				{
+					"metric_name":"CAPS(% customers with score> =7)",
+					"UoM":"%",
+					"performance":"31"
+
+				},
+				{
+					"metric_name":"Customer escalation and penalty",
+					"UoM":"$",
+					"performance":"31"
+
+				}
+			]
+	},
+	{ 
+		"attribute_name":"Compliance",
+		"overall_rag":"1",
+		"metric":
+			[
+				{
+					"metric_name":"Open NCs beyond 30 days",
+					"UoM":"Count",
+					"performance":"2"
+
+				},
+				{
+					"metric_name":"Project Maturity (L1 + L2)",
+					"UoM":"%",
+					"performance":"40"
+
+				},
+				{
+					"metric_name":"Project Maturity (L3)",
+					"UoM":"%",
+					"performance":"40"
+
+				},
+				{
+					"metric_name":"Project Maturity (L4 + L5)",
+					"UoM":"%",
+					"performance":"20"
+
+				},
+				{
+					"metric_name":"IQA Compliance",
+					"UoM":"%",
+					"performance":"85"
+
+				},
+				{
+					"metric_name":"DA Compliance",
+					"UoM":"%",
+					"performance":"60"
+
+				}
+
+			]
+	},
+	{ 
+		"attribute_name":"People",
+		"overall_rag":"2",
+		"metric":
+			[
+				{
+					"metric_name":"Attrition %",
+					"UoM":"%",
+					"performance":"5%"
+
+				},
+				{
+					"metric_name":"CI Compliance %",
+					"UoM":"%",
+					"performance":"65%"
+
+				}
+			]
+	}
+
+]
